@@ -1,0 +1,23 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://192.168.0.75:8888
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 109-994-359
+INFO:werkzeug:127.0.0.1 - - [22/Apr/2025 09:28:36] "GET / HTTP/1.1" 200 -
+ERROR:root:[f0997a01-d6d3-a5fe-53d8-561300318557.openfabric.network] Initialization failed: Expecting value: line 1 column 1 (char 0)
+ERROR:root:[69543f29-4d41-4afc-7f29-3d51591f11eb.openfabric.network] Initialization failed: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Error calling Text-to-Image app: Input schema not found for app ID: f0997a01-d6d3-a5fe-53d8-561300318557
+INFO:werkzeug:127.0.0.1 - - [22/Apr/2025 09:28:55] "POST /generate HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/dennis/Desktop/ai-test/app/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 109-994-359
+INFO:werkzeug: * Detected change in '/home/dennis/Desktop/ai-test/app/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 109-994-359

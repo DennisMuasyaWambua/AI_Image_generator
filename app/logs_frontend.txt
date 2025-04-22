@@ -1,0 +1,64 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.0.75:8501
+
+  Stopping...
+Traceback (most recent call last):
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dennis/Desktop/ai-test/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/cli.py", line 240, in main_run
+    _main_run(target, args, flag_options=kwargs)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/cli.py", line 276, in _main_run
+    bootstrap.run(file, is_hello, args, flag_options)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 355, in run
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 44, in signal_handler
+    server.stop()
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 469, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/termui.py", line 634, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/utils.py", line 319, in echo
+    file.flush()
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 44, in signal_handler
+    server.stop()
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 469, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/termui.py", line 634, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/home/dennis/Desktop/ai-test/venv/lib/python3.10/site-packages/click/utils.py", line 319, in echo
+    file.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stdout>'>

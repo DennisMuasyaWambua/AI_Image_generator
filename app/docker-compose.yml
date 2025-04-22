@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./output:/app/output
+      - ./datastore:/app/datastore
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
